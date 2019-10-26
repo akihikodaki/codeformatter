@@ -198,7 +198,7 @@ namespace Microsoft.DotNet.CodeFormatting.Rules
                 return line.Substring(2);
             }
 
-            return " " + line;
+            return line == "" ? line : " " + line;
         }
 
         public override bool SupportsLanguage(string languageName)
